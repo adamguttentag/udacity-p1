@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Adam Guttentag - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <article>
+      <div class="container">
+        <div class="box u-logo"></div>
+        <div class="header">
+          <header>
+            <h1>ADAM GUTTENTAG</h1>
+            <h2>FRONT-END NINJA</h2>
+          </header>
+        </div>
+        <div class="box h-rule"></div>
+        <div class="box">
+          <picture>
+            <!-- As the same SVG file will render sharply at any pixel density, I have used it for both 1x and 2x at 450px and wider. However, to demonstrate that I understand the concepts behind <picture> and srcset, I created two low-res raster versions that load below 450px. -->
+            <source media="(min-width: 450px)" srcset="images/desk.svg 1x, images/desk.svg 2x" type="image/svg+xml">
+            <source media="(min-width: 300px)" srcset="images/desk_450_1x.jpg 1x, images/desk_450_2x.jpg 2x" type="image/jpeg">
+            <img class="main-picture" src="images/desk.svg" alt="Workstation I built to use a display with a Poäng chair while discouraging my cat from blocking the screen.">
+          </picture>
+        </div>
+        <div class="box featured">
+          <p>Featured Work</p>
+        </div>
+        <div class="box featured-boxes">
+          <section>
+            <picture>
+              <source media="(min-width: 550px)" srcset="images/waterfall.svg 1x, images/waterfall.svg 2x" type="image/svg+xml">
+              <source media="(min-width: 300px)" srcset="images/waterfall_lo.svg 1x, images/waterfall_lo.svg 2x" type="image/svg+xml">
+              <img class="featured-boxes-picture" src="images/waterfall.svg" alt="Animated low-poly representation of Escher's waterfall wheel.">
+            </picture>
+            <div class="featured-boxes-text">
+              <h3><a class="a-text" href="http://codepen.io/guttentag/blog/deconstructing-escher-s-floating-point-waterfall">WATERFALL</a></h3><h4><a class="a-url" href="http://codepen.io/guttentag/blog/deconstructing-escher-s-floating-point-waterfall">http://codepen.io/guttentag/blog/<br>deconstructing-escher-s-<br>floating-point-waterfall</a></h4>
+            </div>
+          </section>
+        </div>
+        <div class="box featured-boxes">
+          <section>
+            <picture>
+              <source media="(min-width: 550px)" srcset="images/patterns.svg 1x, images/patterns.svg 2x" type="image/svg+xml">
+              <source media="(min-width: 300px)" srcset="images/patterns_lo.svg 1x, images/patterns_lo.svg 2x" type="image/svg+xml">
+              <img class="featured-boxes-picture" src="images/patterns.svg" alt="Demonstration of animated SVG patterns.">
+            </picture>
+            <div class="featured-boxes-text">
+              <h3><a class="a-text" href="http://codepen.io/guttentag/blog/svg-patterns-rotation-and-clippaths">PATTERNS</a></h3><h4><a class="a-url" href="http://codepen.io/guttentag/blog/svg-patterns-rotation-and-clippaths">http://codepen.io/guttentag/blog/<br>svg-patterns-rotation-<br>and-clippaths</a></h4>
+            </div>
+          </section>
+        </div>
+        <div class="box featured-boxes">
+          <section>
+            <picture>
+              <source media="(min-width: 550px)" srcset="images/crane.svg 1x, images/crane.svg 2x" type="image/svg+xml">
+              <source media="(min-width: 300px)" srcset="images/crane_lo.svg 1x, images/crane_lo.svg 2x" type="image/svg+xml">
+              <img class="featured-boxes-picture" src="images/crane.svg" alt="Demonstration of SMIL synchronized path and fill animation.">
+            </picture>
+            <div class="featured-boxes-text">
+              <h3><a class="a-text" href="http://codepen.io/guttentag/blog/svg-animated-papercrane">CRANE</a></h3><h4><a class="a-url" href="http://codepen.io/guttentag/blog/svg-animated-papercrane">http://codepen.io/guttentag/blog/<br>svg-animated-<br>papercrane</a></h4>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
