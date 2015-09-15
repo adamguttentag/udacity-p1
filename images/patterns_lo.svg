@@ -1,0 +1,56 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1620 320" xml:space="preserve">
+<defs>
+    <clipPath id="quadrant1">
+            <path d="M0,0 160,0 160,160 0,160z"/>
+    </clipPath>
+    <clipPath id="quadrant4">
+            <path d="M160,160 320,160 320,320 160,320z"/>
+    </clipPath>
+
+    <pattern id="psea" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+        <g>
+        <polygon fill="#42686F" points="7.375,5.875 4.5,10 8,14 13.25,17.375 16.5,13.75 "/>
+        <polygon fill="#042443" points="29.167,0 24.5,5.875 12.625,2.375 11,0 "/>
+        <polygon fill="#061029" points="46,8.062 41,5.875 39.5,0 50,0 50,6.749 "/>
+        <polygon fill="#27474B" points="43.25,25.749 33.584,18.582 41,5.875 46,8.062 50,6.749 "/>
+        <polygon fill="#061029" points="4.5,10 0,6.749 0,0 11,0 12.625,2.375 7.375,5.875 "/>
+        <polygon fill="#27474B" points="13.834,31.749 13.25,17.375 8,14 0,36.5 9.667,41.666 "/>
+        <polygon fill="#061029" points="39.5,50 46.334,31.916 50,37.666 50,50 "/>
+        <polygon fill="#061029" points="9.667,41.666 11,50 0,50 0,36.5 "/>
+        <polygon fill="#42686F" points="20.084,35.499 16.834,45.499 11,50 9.667,41.666 13.834,31.749 "/>
+        <polygon fill="#042443" points="32.75,32.582 20.084,35.499 13.834,31.749 24.5,20.582 30.75,26.749 "/>
+        <animate dur="0.4s" repeatCount="indefinite" attributeName="opacity" values="0.3;1;0.3;"/>
+        </g>
+
+        <g>
+        <polygon fill="#42686F" points="12.625,2.375 24.5,5.875 21.5,12.625 16.5,13.75 7.375,5.875 "/>
+        <polygon fill="#42686F" points="41,5.875 39.5,0 29.167,0 24.5,5.875 "/>
+        <polygon fill="#042443" points="33.584,18.582 41,5.875 24.5,5.875 21.5,12.625 24.5,20.582 "/>
+        <polygon fill="#042443" points="46.334,31.916 43.25,25.749 50,6.749 50,37.666 "/>
+        <polygon fill="#042443" points="8,14 0,36.5 0,6.749 4.5,10 "/>
+        <polygon fill="#061029" points="13.834,31.749 13.25,17.375 16.5,13.75 21.5,12.625 24.5,20.582 "/>
+        <polygon fill="#42686F" points="26.5,43.166 46.334,31.916 39.5,50 29.167,50 "/>
+        <polygon fill="#042443" points="26.5,43.166 29.167,50 11,50 16.834,45.499 "/>
+        <polygon fill="#27474B" points="32.75,32.582 46.334,31.916 26.5,43.166 16.834,45.499 20.084,35.499 "/>
+        <polygon fill="#42686F" points="33.584,18.582 43.25,25.749 46.334,31.916 32.75,32.582 30.75,26.749 24.5,20.582 "/>
+        <animate dur="0.4s" repeatCount="indefinite" attributeName="opacity" values="1;0.3;1;"/>
+        </g>
+    </pattern>
+</defs>
+
+<rect id="blackbackground" width="320" height="320" fill="#333333" />
+
+<g id="bricks" style="clip-path:url(#quadrant1);">
+    <circle cx="160" cy="160" r="160" fill="url(#psea)" >
+        <animateTransform attributeName="transform" begin="0s" dur="2.5s" type="rotate" from="360 160 160" to="0 160 160" repeatCount="indefinite"/>
+    </circle>
+        <animateTransform attributeName="transform" begin="0s" dur="6s" type="rotate" from="0 160 160" to="360 160 160" repeatCount="indefinite"/>
+</g>
+
+<g id="bricks2" style="clip-path:url(#quadrant4);">
+    <circle cx="160" cy="160" r="160" fill="url(#psea)" >
+        <animateTransform attributeName="transform" begin="0s" dur="6s" type="rotate" from="0 160 160" to="360 160 160" repeatCount="indefinite"/>
+    </circle>
+        <animateTransform attributeName="transform" begin="0s" dur="6s" type="rotate" from="0 160 160" to="360 160 160" repeatCount="indefinite"/>
+</g>
+</svg>
