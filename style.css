@@ -1,0 +1,294 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 200 1em 'Helvetica Neue', arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #747704;
+}
+
+.featured-boxes img {
+  height: 10.2em;
+}
+
+ a:hover {
+  color: #aaa;
+}
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+.box {
+  width: 100%;
+}
+
+.u-logo {
+  background-image: url(images/u_logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: min-height 0.4s;
+  min-height: 6em;
+  transition: width 0.4s;
+  width: 6em;
+}
+
+.header {
+  text-align: right;
+  color: #bcbbbb;
+}
+
+h1 {
+  font-size: 1em;
+  letter-spacing: 5px;
+  font-weight: 100;
+  margin: 0;
+}
+
+h2 {
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin: 0em 0.4em 0em 0em;
+}
+
+.h-rule {
+  background-color: #bcbbbb;
+}
+
+.main-picture {
+  max-width: 100%;
+}
+
+.featured {
+  color: #bcbbbb;
+}
+
+.featured-boxes {
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+}
+
+.a-url {
+  color: #bcbbbb;
+}
+
+/* Screens no wider than 449px */
+@media screen and (max-width: 449px) {
+  .container {
+    justify-content: center;
+  }
+
+  .u-logo {
+    background-position: center;
+    transition: min-height 0.4s;
+    min-height: 3em;
+  }
+
+  .header {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 0.75em;
+  }
+
+  h3 {
+    font: 300 2em 'Helvetica Neue', arial, sans-serif;
+    letter-spacing: 3.7px;
+    margin: 0.3em 0em 0em 0em;
+  }
+
+  h4 {
+    font: 200 0.7em 'Helvetica Neue', arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 0.3em 0em -8em 0em;
+  }
+
+  .h-rule {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+    min-height: 0.16em;
+  }
+
+  .featured {
+    font-size: 1em;
+    letter-spacing: 0.08em;
+    margin: 0.6em 0em 0.3em 0.18em;
+  }
+
+  .featured-boxes {
+    transition: width 0.4s;
+    width: 100%;
+    margin-bottom: 0.3em;
+    max-height: 7em;
+  }
+
+  .featured-boxes:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .featured-boxes-picture {
+    background-color: transparent;
+    max-width: 50%;
+    margin-right:10em;
+    margin-top: -2em;
+  }
+
+  .featured-boxes-text {
+    text-shadow: 1px 1px #000;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    top: -8.5em;
+  }
+
+  .a-text {
+    color: #fff;
+  }
+
+}
+
+/* Screens 450px to 579px wide */
+@media screen and (min-width: 450px) and (max-width: 579px) {
+  .u-logo {
+    transition: width 0.4s;
+    width: 13%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 0.75em;
+  }
+
+  h3 {
+    font: 300 3em 'Helvetica Neue', arial, sans-serif;
+    letter-spacing: 3.7px;
+    margin: 0.3em 0em 0em 0em;
+  }
+
+  h4 {
+    font: 200 0.7em 'Helvetica Neue', arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 0.3em 0em -9em 0em;
+  }
+
+  .h-rule {
+    margin-top: 0.6em;
+    margin-bottom: 1em;
+    min-height: 0.16em;
+  }
+
+  .featured {
+    font-size: 1em;
+    letter-spacing: 0.08em;
+    margin: 0.6em 0em 0.3em 0.18em;
+  }
+
+  .featured-boxes {
+    transition: width 0.4s;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .featured-boxes:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .featured-boxes-picture {
+    width: 100%;
+  }
+
+  .featured-boxes-text {
+    text-shadow: 1px 1px #000;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    top: -9em;
+  }
+
+}
+
+/* Screens 580px wide or larger */
+@media screen and (min-width: 580px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font: 300 1.6em 'Helvetica Neue', arial, sans-serif;
+    letter-spacing: 5px;
+    margin: 0.3em 0em 0em 0em;
+  }
+
+  h4 {
+    font: 200 0.75em 'Helvetica Neue', arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 0.3em 0em 0em 0em;
+  }
+
+  .h-rule {
+    margin-top: 0.8125em;
+    margin-bottom: 1.68em;
+    min-height: 0.22em;
+  }
+
+  .featured {
+    font-size: 1.83em;
+    letter-spacing: 0.12em;
+    margin: 0.0em 0em -0.7em 0.28em;
+  }
+
+  .featured-boxes {
+    transition: width 0.4s;
+    /* calc may fail validation due to a known bug in the W3C validator. See https://www.w3.org/Bugs/Public/show_bug.cgi?id=18913 */
+    width: calc((100% - 24px) / 3);
+    margin-right: 12px;
+  }
+
+  .featured-boxes:last-of-type {
+    margin-right: 0;
+  }
+
+  .featured-boxes-text {
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid transparent;
+  }
+
+}
+
+/* Screens 800px wide or larger */
+@media screen and (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin: auto;
+  }
+
+}
